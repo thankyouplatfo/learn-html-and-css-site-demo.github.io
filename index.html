@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!--SEO-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <!--CSS-->
+        <link rel="stylesheet" type="text/css" href="src/css/main-style.css">
+        <!--CSS LOGO FILE-->
+        <link rel="stylesheet" type="text/css" href="src/css/logo.css">
+        <!--CSS COLOR FILE-->
+        <link rel="stylesheet" type="text/css" href="src/css/cnsb.no_conflict.css">
+        
+        <!--RESPONSE FILES  -->
+        <!--EXTRA_SMALL_DEVICES  MAX-WIDTH:600PX -->
+        <link rel="stylesheet" type="text/css" href="src\css\rwd\extra_small_devices.css">
+        <!--SMALL_DEVICES  MIN-WIDTH:600PX 
+        <link rel="stylesheet" type="text/css" href="src\css\rwd\small_devices.css">-->
+        <!--MEDIUM_DEVICES  MIN-WIDTH:768PX -->
+        <link rel="stylesheet" type="text/css" href="src\css\rwd\medium_devices.css">
+        <!--LARGE_DEVICES  MIN-WIDTH:992PX -->
+        <link rel="stylesheet" type="text/css" href="src\css\rwd\large_devices.css">
+        <!--EXTRA_LARGE_DEVICES  MIN-WIDTH:1200PX 
+        <link rel="stylesheet" type="text/css" href="src\css\rwd\extra_large_devices.css">-->
+       
+    <!--ICONS-->
+    <link rel="stylesheet" type="text/css" href="src/icons/icons/Font-Awesome-4.7.0/css/font-awesome.min.css">
+    <!--JS-->
+    <script src="https://www.w3schools.com/lib/w3.js"></script>
+</head>
+<body class="cnsb-brown" style="padding-right: 8px;padding-left: 8px;">
+    <div id="content">
+        <!--start header-->
+        <header id="header" class="section cnsb-boxsha-grey">
+            <div class="row">
+                <div class="right-section col-3 l3 col-3 m3 col-12 s12 right cnsb-aliceblue padding-0 mairgin-0">
+                    <a href="" target="_blank"><img src="src\images\logos\main-logo.jpg" class="block block-h" alt="الشعار الرسمي لتعلم  HTML&SSS"></a>
+                </div>
+                <div class="left-section col-9 l9 col-9 m9 col-12 s12 right cnsb-antiquewhite">
+                    <h1 id="logo" class="center">
+                        <span>تعلم </span>
+                        <span>HTML</span>
+                        <span>&</span>
+                        <span>CSS</span>
+                    </h1>
+                </div>
+            </div>
+            <!--end header-->
+        </header>
+        <!--start nav-->
+        <nav id="nav">
+            <a href="#team" class="team button jumbo cnsb-aqua right bor-b-r-rad bor-t-r-rad">الفريق</a>
+            <a href="#about" class="about button jumbo cnsb-aquamarine">حول</a>
+            <a href="#our_business" class="our_business button jumbo cnsb-azure ">أعمالنا</a>
+            <a href="#prices" class="prices button jumbo cnsb-beige">الأسعار</a>
+            <a href="#communication" class="communication button jumbo cnsb-bisque left bor-t-l-rad bor-b-l-rad">التواصل</a>
+            <!--end nav-->
+        </nav>
+        <!--start image header-->
+        <div id="image-header" class="bor-rad-full">
+            <img src="src/images/logos/main-logo.jpg" class="nature bor-rad-full">
+            <img src="src/images/logos/small-logo.png" class="nature bor-rad-full">
+            <img src="src/images/logos/main-logo.jpg" class="nature bor-rad-full">
+            <!--buttons controller in image header-->
+            <button onclick="myShow.next()" class="next button bor-b-l-rad cnsb-chocolate jumbo">التالي</button>
+            <button onclick="myShow.previous()" class="previous button bor-b-r-rad cnsb-coral jumbo">السابق</button>
+            <!--end image header-->
+        </div>
+        <!--start page-->
+        <div id="main">
+            <div id="team" class="team cnsb-cornflowerblue padding">
+                <h2>الفريق</h2>
+                <div class="row">
+                    <!--
+                        team_member_info_box
+                    -->
+                    <div id="team_member_info_box" class="col-3 l3 col-6 m6 right bor-rad-full right" style="position: relative;">
+                        <img src="src/images/logos/main-logo.jpg" class="bor-rad-full">
+                        <div id="team_member_info_box2" class="bor-rad-full">
+                            <a href="javascript:void(0)" onclick="document.getElementById('team-member-popup').style.display='block'">
+                                <h3 class="center" >الأسم</h3>
+                            </a>
+                            <h4 class="center" >المنصب</h4>
+                        </div>
+                    </div>
+                </div>
+                <!--
+                    Team member popup
+                -->
+                <div id="team-member-popup" onclick="document.getElementById('team-member-popup').style.display='none'">
+                    <span onclick="document.getElementById('team-member-popup').style.display='none'" class="button cnsb-darkgoldenrod jumbo close-button">&times;</span>
+                    <div class="bio bor-rad-full cnsb-white padding center">
+                        <h5 class="jumbo">الأسم</h5>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        </p>
+                        <div id="nav">
+                            <a href="#" class="facebook-button button padding cnsb-darkblue bor-b-r-rad bor-t-r-rad">
+                                <i class="fa fa-facebook"></i>
+                            </a>
+                            <a href="#" class="twitter-button button padding cnsb-lightblue">
+                                <i class="fa fa-twitter"></i>
+                            </a>
+                            <a href="#" class="instagram-button button padding cnsb-brown">
+                                <i class="fa fa-instagram"></i>
+                            </a>
+                            <a href="#" class="github-button button padding cnsb-black bor-t-l-rad bor-b-l-rad">
+                                <i class="fa fa-github"></i>
+                            </a>
+                            <!--end nav-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="about" class="about cnsb-cornsilk padding">
+                <h2>حول</h2>
+                <p class="xxxlarge" style="text-align: justify;">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+            </div>
+            <div id="our_business" class="our_business cnsb-crimson padding">
+                <h2>أعمالنا</h2>
+                <div class="row">
+                    <div class="col-4 l4 col-12 s12 bor-rad-full right cnsb-darkgreen" style="height:500px ;">
+                        <iframe src="#" title="blablabla" class="block-h block bor-rad-full border-0" frameborder='0'></iframe>
+                    </div>
+                </div>
+            </div>
+            <div id="prices" class="prices cnsb-cyan padding">
+                <h2>الأسعار</h2>
+                <div class="row">
+                    <div class=" col-4 l4  col-6 m6 bor-rad-full" style="height:700px;">
+                        <div class="col-12 l12 bor-rad-full cnsb-darkkhaki" style="height:33%;">
+                            <img src="src/images/price/1.png" alt="blablabla" class="block-h block bor-rad-full">
+                        </div>
+                        <div class="col-12 l12 bor-rad-full cnsb-darkmagenta" style="height:66%;overflow-x: auto;">
+                            <h3>كورس أساسيات تصميم واجهات المواقع </h3>
+                            <details style="border-bottom: 1px dashed currentColor;padding-bottom: 9px;">
+                                <summary>
+                                    هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها التطبيق ...
+                                </summary>
+                                <p>
+                                    إذا كنت تحتاج إلى عدد أكبر من الفقرات يتيح لك مولد النص العربى زيادة عدد الفقرات كما تريد، النص لن يبدو مقسما ولا يحوي أخطاء لغوية، مولد النص العربى مفيد لمصممي المواقع على وجه الخصوص، حيث يحتاج العميل فى كثير من الأحيان أن يطلع على صورة حقيقية لتصميم
+                                    الموقع. ومن هنا وجب على المصمم أن يضع نصوصا مؤقتة على التصميم ليظهر للعميل الشكل كاملاً،دور مولد النص العربى أن يوفر على المصمم عناء البحث عن نص بديل لا علاقة له بالموضوع الذى يتحدث عنه التصميم فيظهر بشكل لا يليق. هذا النص
+                                    يمكن أن يتم تركيبه على أي تصميم دون مشكلة فلن يبدو وكأنه نص منسوخ، غير منظم، غير منسق، أو حتى غير مفهوم. لأنه مازال نصاً بديلاً ومؤقتاً.
+                                </p>
+                            </details>
+                            <h4 class="center jumbo cnsb-txt-black" style="font-family: 'Courier New', Courier, monospace!important;font-size: 64px;text-shadow: none;font-weight: 900;font-style: italic;color: white!important;">
+                                10$
+                            </h4>
+                            <div class="block padding cnsb-lightgrey">
+                                <a href="#" class="button block cnsb-black xxxlarge">شراء الأان </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="communication" class="communication cnsb-darkblue padding">
+                <h2>تواصل معنا </h2>
+                <div class="row">
+                    <div class="col-6 l6 col-12 s12 cnsb-darkolivegreen bor-rad-full right box-social" style="height: 307px!important;overflow-x: auto;">
+                        <div class="col-4 l4 col-12 s12 center cnsb-darkred facebook bor-rad-full" style="height:auto;">
+                            <a href="#" style="color: currentColor;"><i class="fa fa-facebook fa-5x"></i></a>
+                        </div>
+                        <div class="col-4 l4 col-12 s12 center cnsb-darksalmon twitter bor-rad-full" style="height:auto;">
+                            <a href="#" style="color: currentColor;"><i class="fa fa-twitter fa-5x"></i></a>
+                        </div>
+                        <div class="col-4 l4 col-12 s12 center cnsb-darkseagreen instagram bor-rad-full" style="height:auto;">
+                            <a href="#" style="color: currentColor;"><i class="fa fa-instagram fa-5x"></i></a>
+                        </div>
+                        <div class="col-4 l4 col-12 s12 center cnsb-darkslateblue youtube bor-rad-full" style="height:auto;">
+                            <a href="#" style="color: currentColor;"><i class="fa fa-youtube fa-5x"></i></a>
+                        </div>
+                        <div class="col-4 l4 col-12 s12 center cnsb-darkslategray users bor-rad-full" style="height:auto;">
+                            <a href="#" style="color: currentColor;"><i class="fa fa-users fa-5x"></i></a>
+                        </div>
+                        <div class="col-4 l4 col-12 s12 center cnsb-darkslategrey whatsapp bor-rad-full" style="height:auto;">
+                            <a href="#" style="color: currentColor;"><i class="fa fa-whatsapp fa-5x"></i></a>
+                        </div>
+                        <div class="col-4 l4 col-12 s12 center cnsb-darkturquoise comment bor-rad-full" style="height:auto;">
+                            <a href="#" style="color: currentColor;"><i class="fa fa-comment fa-5x"></i></a>
+                        </div>
+                        
+                    </div>
+                    <div class="col-6 l6 col-12 s12 cnsb-darkorange bor-rad-full right box-form" style="height: 307px!important;overflow-x: auto;">
+                        <h3 class="center">نموذج التواصل </h3>
+                        <form>
+                            <p class="xxxlarge">
+                                <label>الأسم الأول</label>
+                                <input class="input section bor-rad-s  Fname" name="Fname" id="Fname" type="text">
+                                <span id="FnameErr"></span>
+                            </p>
+                            <p class="xxxlarge">
+                                <label>الأسم الأخير </label>
+                                <input class="input section bor-rad-s  Lname" name="Lname" id="Lname" type="text">
+                                <span id="LnameErr"></span>
+                            </p>
+                            <p class="xxxlarge">
+                                <label>البريد الألكتروني</label>
+                                <input class="input section bor-rad-s  Email" name="Email" id="Email" type="email">
+                                <span id="EmailErr"></span>
+                            </p>
+                            <p class="xxxlarge">
+                                <label>النوع </label>
+                                <input class="input section bor-rad-s  type" name="type" id="type" type="text">
+                                <span id="typeErr"></span>
+                            </p>
+                            <p class="xxxlarge">
+                                <label>الموضوع </label>
+                                <select class="input section bor-rad-s  subject" name="subject" id="subject" type="text">
+                                    <option class="jumbo" value="1">رسالة </option>
+                                    <option class="jumbo" value="2">شكوى </option>
+                                    <option class="jumbo" value="3">اقتراح </option>
+                                </select>
+                                <span id="subjectErr"></span>
+                            </p>
+                            <p class="xxxlarge">
+                                <label>الرسالة</label>
+                                <textarea class="input section bor-rad-s  message" name="message" id="message" type="message" rows="7"></textarea>
+                                <span id="messageErr"></span>
+                            </p>
+                            <p>
+                                <input type="submit" name="send-form" class="button cnsb-darkviolet bor-rad-full xxxlarge">
+                            </p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <!--end page-->
+        </div>
+        <!--start footer-->
+        <footer id="footer">
+                <h5 id="logo" class="center">
+                    <span>تعلم </span>
+                    <span>HTML</span>
+                    <span>&</span>
+                    <span>CSS</span>
+                </h5>
+                <h6 class="center xxxlarge">2022 - <span id="demo"></span>
+                    <script>
+                        const d = new Date();
+                        let year = d.getFullYear();
+                        document.getElementById("demo").innerHTML = year;
+                    </script>
+                </h6>
+                <p class="center">
+                    <a href="http://jigsaw.w3.org/css-validator/check/referer">
+                        <img style="border:0;width:88px;height:31px" src="http://jigsaw.w3.org/css-validator/images/vcss" alt="Valid CSS!" />
+                    </a>
+                </p>
+                <p class="center xxxlarge" style="description:rtl;"> CSS صالح! </p>
+                <p class="center">
+                    <a href="http://jigsaw.w3.org/css-validator/check/referer">
+                        <img style="border:0;width:88px;height:31px" src="http://jigsaw.w3.org/css-validator/images/vcss-blue" alt="Valid CSS!" />
+                    </a>
+                </p>
+                <!-- end footer -->
+            </footer>
+    </div>
+    <script type="text/javascript">
+        myShow = w3.slideshow(".nature", 0);
+    </script>
+</body>
+</html>

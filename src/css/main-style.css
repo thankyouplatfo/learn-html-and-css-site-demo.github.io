@@ -1,0 +1,400 @@
+/*global*/
+@import url("logo.css")
+html{box-sizing: border-box;}
+*,*:before,*:after{box-sizing: inherit;font-family:inherit;}
+body{margin: 0}
+html,body{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size:15px;
+    line-height:1.5;
+    direction: rtl;
+    text-align: right;
+}
+html{overflow-x:hidden}
+/*Customize*/
+h1{font-size:36px}
+h2{font-size:30px}
+h3{font-size:24px}
+h4{font-size:20px}
+h5{font-size:18px}
+h6{font-size:16px}
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Noto Sans Arabic';
+    font-weight:400;
+    margin:10px 0;
+    text-shadow: 1.5px 0 aqua,-1.5px 0 red;
+}
+.input{
+    padding:8px;
+    display:block;
+    border:none;
+    border-bottom:1px solid #ccc;
+    width:100%
+}
+
+/*content div css*/
+#content{
+    max-width: 980px;
+    margin: 0 auto;
+}
+/*All Sections*/
+    #header,
+    #nav,
+    #image-header,
+    #main,
+    #footer{
+        width: 100%;
+        display: block;
+        margin: 16px 0!important;
+        border: 1px dashed black;
+        clear: both!important;
+    }
+/*header*/
+    #header{
+        height: 250px;
+        border: none!important;
+    }
+    #header h1{
+        padding: 5.5% 0!important;
+        font-size: 64px;
+
+    }
+/*nav*/
+    #nav{
+        width:100%;
+        /*overflow:hidden;*/
+        /*position: sticky;*/
+        /*z-index: 4;*/
+        /*top: 16px;*/
+        height: 89px;
+        display: block;
+        border: none;
+        overflow: hidden;
+    }
+    #nav a{
+            width:19%;
+            margin:0 .50%;
+            
+        }
+    a.team{margin-right: 0!important;}
+    a.communication{margin-left: 0!important;}
+/*image-header*/
+    #image-header{
+        width: 100%;
+        border-color: white;
+        min-height: 99vh;
+        min-height: 99vh;
+        height: 99vh;
+        position: relative;
+    }
+    #image-header>img{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+    }
+    #image-header>button{
+       position: absolute;
+    }
+    .next{
+        bottom: 0;
+        left: 0;
+        margin: 7px 0;
+    }
+    .previous{
+        bottom: 0;
+        right: 0;
+        margin: 7px 0;
+    }
+    .next:hover,.previous:hover{
+        margin: 0!important;
+    }
+/*main*/
+    #main{
+        border: none;
+        width: 100%;
+    }
+    /*.team,*/
+    /*.about,*/
+    /*.our_business,*/
+    /*.prices,*/
+    /*.communication{*/
+    /*    max-width: 100%;*/
+    /*    max-height: 100vh;*/
+    /*    overflow-x: auto;*/
+    /*}*/
+    .team>h2,
+    .about>h2,
+    .our_business>h2,
+    .prices>h2,
+    .communication>h2{
+        text-align: center;
+        font-size: 64px!important;
+    }
+    /*team*/
+        #team{
+            max-height: 100vh!important;
+            overflow-x: auto!important;
+        }
+        /*BOX TEAM*/
+        #team_member_info_box{
+            position: relative;
+        }
+        #team_member_info_box>*{
+            position: absolute;
+        }
+        #team_member_info_box>img{
+            width: 91%;height: 91%;
+        }
+        #team_member_info_box>div{
+            width: 91%;
+            height: 91%;
+            background: rgba(0, 139, 139, .9);
+            color: white;
+            display: none;
+        }
+        #team_member_info_box>div h3{
+            margin: 0!important;
+            padding-top: 35.5%;
+        }
+        #team_member_info_box:hover #team_member_info_box2{
+            display: block;
+        }
+        /*Team member popup*/
+            #team-member-popup{
+                position: fixed;
+                top: 0;
+                right: 0;
+                height: 100%;
+                width: 100%;
+                background-color: rgba(0, 0, 0, 0.7);
+                z-index: 3;
+                display: none;
+                color: transparent;
+                overflow-x: auto;
+                padding: 10px;
+            }
+            #team-member-popup .bio{
+                max-width: 980px;
+                height: auto;
+                margin: 120px  auto;
+            }
+            #team-member-popup .bio p{
+                text-align: justify;
+            }
+            #team-member-popup .bio #nav{
+                height: 85px;
+                background-color: transparent;
+            }
+            #team-member-popup .bio #nav a{
+                font-size: 2pc;
+                padding: 0;
+                width: auto!important;
+                margin-right: .33px!important;
+            }
+    /*about*/
+        #about{
+            max-height: 100vh;
+            overflow-x: auto;
+        }
+    /*our_business*/
+        #our_business{
+            height: auto;
+            max-height: 100vh;
+            overflow-x: auto;
+        }
+    /*prices*/
+        #prices{
+           
+            max-height: 850px;
+            overflow-x: auto;
+        }
+    /*communication*/
+
+/*footer*/
+    #footer{}
+/*myClass*/
+    .button{
+        border:none;
+        display:inline-block;
+        padding:15px 32px;
+        vertical-align:middle;
+        overflow:hidden;
+        text-decoration:none;
+        color:inherit;
+        background-color:inherit;
+        text-align:center;
+        cursor:pointer;
+        white-space:nowrap;
+        -webkit-touch-callout:none;
+        -webkit-user-select:none;
+        -khtml-user-select:none;
+        -moz-user-select:none;
+        -ms-user-select:none;
+        user-select:none;
+        box-shadow: inset 0px 8px 0px rgba(0, 0, 0, .2), 0px 6px 0px rgba(0, 0, 0, .2);
+        transition: all .25s ease;
+    }
+    .button:hover {
+            text-decoration: underline;
+            box-shadow: inset 0px 0px 0px rgba(0, 0, 0, .2), 0px 0px 0px rgba(0, 0, 0, .2);
+            background-image: linear-gradient(to right top, #0A5B95, #E8521D)!important;
+            color: white!important;
+        }
+    .close-button{
+        position: fixed;
+        top: 0;
+        left: 0;
+    }
+    /*font Sizes*/
+    .tiny{font-size: 10px;}
+    .small{font-size: 13px;}
+    .large {font-size: 15px;}
+    .xlarge{font-size: 18px;}
+    .xxlarge{font-size: 21px;}
+    .xxxlarge{font-size: 24px;}
+    .jumbo{font-size: 35px;}
+    /*set image*/
+    .image{max-width:100%;height:auto;}
+    /*set width&height*/
+    .block{width: 100%;}
+    .block-h{height: 100%;}
+
+    /*This is the grid that divides the screen into 12 columns*/
+        .row::before,.row::after{
+            content: '';
+            display: table;
+            clear: both;
+        }
+
+        [class*='col-']{
+            padding: 10px;
+            background-color: gray;
+            /*border-right: 1px solid black;*/
+            float: left;
+            height: 250px;
+        }
+        .col{width: 100%;}
+        .col-1.s1 {width: 8.33333%;}
+        .col.s2 {width: 16.66666%;}
+        .col-3.s3 {width: 24.99999%;}
+        .col-4.s4 {width: 33.33333%;}
+        .col-5.s5 {width: 41.66666%;}
+        .col-6.s6 {width: 49.99999%;}
+        .col-7.s7 {width: 58.33333%;}
+        .col-8.s8 {width: 66.66666%;}
+        .col-9.s9 {width: 74.99999%;}
+        .col-10.s10{width: 83.33333%;}
+        .col-11.s11{width: 91.66666%;}
+        .col-12.s12{width: 99.99999%;}
+
+
+        /* Medium devices (landscape tablets, 768px and up) = m */
+        @media only screen and (min-width: 768px) {
+            .col-1.m1 {width: 8.33333%;}
+            .col.m2 {width: 16.66666%;}
+            .col-3.m3 {width: 24.99999%;}
+            .col-4.m4 {width: 33.33333%;}
+            .col-5.m5 {width: 41.66666%;}
+            .col-6.m6 {width: 49.99999%;}
+            .col-7.m7 {width: 58.33333%;}
+            .col-8.m8 {width: 66.66666%;}
+            .col-9.m9 {width: 74.99999%;}
+            .col-10.m10{width: 83.33333%;}
+            .col-11.m11{width: 91.66666%;}
+            .col-12.m12{width: 99.99999%;}
+        }
+
+        /* Large devices (laptops/desktops, 992px and up)   = l */
+        @media only screen and (min-width: 992px) {
+            .col-1.l1 {width: 8.33333%;}
+            .col.l2 {width: 16.66666%;}
+            .col-3.l3 {width: 24.99999%;}
+            .col-4.l4 {width: 33.33333%;}
+            .col-5.l5 {width: 41.66666%;}
+            .col-6.l6 {width: 49.99999%;}
+            .col-7.l7 {width: 58.33333%;}
+            .col-8.l8 {width: 66.66666%;}
+            .col-9.l9 {width: 74.99999%;}
+            .col-10.l10{width: 83.33333%;}
+            .col-11.l11{width: 91.66666%;}
+            .col-12.l12{width: 99.99999%;}
+        }
+    /*End This is the grid that divides the screen into 12 columns*/
+
+    /*floating*/
+    .right{float: right!important;}
+    .left{float: left!important;}
+    /*set margin top and bottom*/
+    .section{
+        margin-top:16px!important;
+        margin-bottom:16px!important
+    }
+    /*no-padding&no-margin*/
+    .padding-0{padding: 0!important;}
+    .mairgin-0{margin: 0!important;}
+    /*padding&margin*/
+    .padding{padding: 16px!important;}
+    .padding-16{padding: 16px 0!important;}
+    .mairgin{margin: 16px!important;}
+    /*align*/
+    .align-l{text-align: left!important;direction: ltr;}
+    .center{text-align: center!important;direction: auto;}
+    .align-r{text-align: right!important;direction: rtl;}
+    /*borders*/
+        .border-d {
+            border: 1px solid grey;
+        }
+        /*border-none*/
+        .border-0{border: 0!important;}
+        .bor-t-l-rad {
+            border-top-left-radius: 8px!important;
+        }
+
+        .bor-b-l-rad {
+            border-bottom-left-radius: 8px!important;
+        }
+
+        .bor-b-r-rad {
+            border-bottom-right-radius: 8px!important;
+        }
+
+        .bor-t-r-rad {
+            border-top-right-radius: 8px!important;
+        }
+        .bor-rad-full {
+            border-radius: 8px!important;
+        }
+
+        .bor-rad-tiny {
+            border-radius: 2px;
+        }
+
+        .bor-rad-s {
+            border-radius: 4px;
+        }
+
+        .bor-rad-m {
+            border-radius: 6px;
+        }
+
+        .bor-rad-l {
+            border-radius: 8px;
+        }
+
+        .bor-rad-xl {
+            border-radius: 10px;
+        }
+
+        .bor-rad-xxl {
+            border-radius: 12px;
+        }
+
+        .bor-rad-xxxl {
+            border-radius: 14px;
+        }
+
+        .bor-rad-jumbo {
+            border-radius: 16px;
+        }
+    .transparent{background: transparent!important;}
+    

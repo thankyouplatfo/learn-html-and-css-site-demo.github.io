@@ -1,0 +1,24 @@
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+	div.box-social{
+		margin: 0!important;
+	}
+	div.facebook,
+	div.twitter,
+	div.instagram,
+	div.youtube,
+	div.users,
+	div.whatsapp,
+	div.comment{margin: 0!important;}
+	/**/
+	#team_member_info_box>img{
+	    width: 90.90%;height: 90.90%;
+	}
+	#team_member_info_box>div{
+	    width: 91%;
+	    height: 91%;
+	    background: rgba(0, 139, 139, .9);
+	    color: white;
+	    display: none;
+	}
+}

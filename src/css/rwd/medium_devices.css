@@ -1,0 +1,34 @@
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+	#nav a {
+	    width: 18.90%;
+	    margin: 0 .50%;
+	}
+	#team_member_info_box>img{
+	    width: 94%;
+    }
+    #team_member_info_box>div{
+        width: 94%;
+        background: rgba(0, 139, 139, .9);
+        color: white;
+        display: none;
+    }
+	#team_member_info_box>div h3{
+	        padding-top: 25%!important;
+	    }
+	/**/
+	div.box-social{
+		margin: 16px 0;
+	}
+	div.facebook,
+	div.twitter,
+	div.instagram,
+	div.youtube,
+	div.users,
+	div.whatsapp,
+	div.comment{margin: 4px 0;}
+
+	input[type='submit']{
+		width: 100%;
+	}
+}

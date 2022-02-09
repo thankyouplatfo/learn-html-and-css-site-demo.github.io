@@ -1,0 +1,123 @@
+/*Set Font*/
+	@import url('https://fonts.googleapis.com/css2?family=Lalezar&family=Noto+Sans+Arabic:wght@700&display=swap');
+	@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@1,900&display=swap');
+	
+	h1#logo{
+		font-size: 100px!important;
+	}
+	h2#logo{
+		font-size: 90px!important;
+	}
+	h3#logo{
+		font-size: 80px!important;
+	}
+	h4#logo{
+		font-size: 70px!important;
+	}
+	h5#logo{
+		font-size: 60px!important;
+	}
+	h6#logo{
+		font-size: 50px!important;
+	}
+
+	#logo *:nth-child(1){
+		font-family: 'Noto Sans Arabic';
+		position: relative;
+		bottom: 20px;
+		text-shadow: 2.5px 0 aqua,-2.5px 0 red;
+		letter-spacing: 6px;
+		font-weight: 200!important;
+	}
+	#logo *:nth-child(2){
+		font-family: 'Barlow Condensed';
+		text-shadow: 2.5px 0 orangered,-2.5px 0 aqua;
+		color: orange;
+	}
+	#logo *:nth-child(3){
+		font-family: 'Barlow Condensed';
+		text-shadow: 2.5px 0 aqua,-2.5px 0 red;
+	}
+	#logo *:nth-child(4){
+		font-family: 'Barlow Condensed';
+		text-shadow: 2.5px 0 orangered,-2.5px 0 aqua;
+		color: blue;
+	}
+
+	h1#logo span:nth-child(1),
+	h1#logo span:nth-child(2),
+	h1#logo span:nth-child(3),
+	h1#logo span:nth-child(4){}
+
+@media only screen and (max-width: 600px) {
+	h1#logo{
+		font-size: 38.30px!important;
+	}
+	h2#logo{
+		font-size: 90px!important;
+	}
+	h3#logo{
+		font-size: 80px!important;
+	}
+	h4#logo{
+		font-size: 70px!important;
+	}
+	h5#logo{
+		font-size: 37px!important;
+	}
+	h6#logo{
+		font-size: 50px!important;
+	}
+
+	#logo *:nth-child(1){
+		font-family: 'Noto Sans Arabic';
+		position: relative;
+		bottom: 7.5px;
+		text-shadow: 2.5px 0 aqua,-2.5px 0 red;
+		letter-spacing: 6px;
+		font-weight: 200!important;
+	}
+	#logo *:nth-child(2){
+		font-family: 'Barlow Condensed';
+		text-shadow: 2.5px 0 orangered,-2.5px 0 aqua;
+		color: orange;
+	}
+	#logo *:nth-child(3){
+		font-family: 'Barlow Condensed';
+		text-shadow: 2.5px 0 aqua,-2.5px 0 red;
+	}
+	#logo *:nth-child(4){
+		font-family: 'Barlow Condensed';
+		text-shadow: 2.5px 0 orangered,-2.5px 0 aqua;
+		color: blue;
+	}
+
+}
+/* Medium devices (landscape tablets, 768px and up) = m */
+        @media only screen and (min-width: 768px) {
+        	
+        	h1#logo{
+        		font-size: 76.30px!important;
+        		padding-top: 50px!important;
+        	}
+        	h5#logo{
+        		font-size: 76px!important;
+        	}
+        	#logo *:nth-child(1){
+        		font-family: 'Noto Sans Arabic';
+        		position: relative;
+        		bottom: 5.5px;
+        		text-shadow: 2.5px 0 aqua,-2.5px 0 red;
+        		letter-spacing: 6px;
+        		font-weight: 200!important;
+        	}
+
+        }
+
+/* Large devices (laptops/desktops, 992px and up)   = l */
+        @media only screen and (min-width: 992px) {
+        	h1#logo{
+        		font-size: 100px!important;
+        		padding-top: 33px!important;
+        	}
+        }

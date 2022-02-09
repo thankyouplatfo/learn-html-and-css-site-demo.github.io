@@ -1,0 +1,67 @@
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+	#header{
+		margin-bottom: 100px;
+	}
+	#header .right-section,.left-section{width: 100%!important;clear: right!important;}
+	#header .left-section{height: 120px;clear: right!important;}
+	/*Nav*/
+	#nav{
+	    width:100%;
+	    height: 353px;
+	    display: block;
+	    border: none;
+	    overflow: hidden;
+	    padding-top: 16px;
+	}
+	#nav a{
+        width:100%;
+        margin:1.75% 0;
+        padding: 0;
+        
+    }
+    /*image-header*/
+    /*#image-header{
+    	margin-top: -20!important;
+    }*/
+    /*team*/
+		a.team{
+			margin-right: 0!important;
+			border-bottom-right-radius: 0!important;
+		}
+		a.communication{
+			margin-left: 0!important;
+			border-top-left-radius: 0!important;
+		}
+
+		/*team_member_info_box*/
+		#team_member_info_box{
+			width: 100%!important;
+		}
+
+		#team-member-popup .bio #nav{
+		    height: 125px;
+		    background-color: red;
+		}
+		#team-member-popup .bio #nav a{
+		    font-size: 2pc;
+		    padding: 0;
+		    width: auto!important;
+		    margin-right: .33px!important;
+		}
+		div.box-social{
+			margin: 16px 0;
+		}
+		div.facebook,
+		div.twitter,
+		div.instagram,
+		div.youtube,
+		div.users,
+		div.whatsapp,
+		div.comment{margin: 4px 0;}
+
+		input[type='submit']{
+			width: 100%;
+		}
+	
+}
