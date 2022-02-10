@@ -43,16 +43,38 @@
 		text-shadow: 2.5px 0 orangered,-2.5px 0 aqua;
 		color: blue;
 	}
+	
 
-	h1#logo span:nth-child(1),
-	h1#logo span:nth-child(2),
-	h1#logo span:nth-child(3),
-	h1#logo span:nth-child(4){}
+	#logo *:nth-child(1){
+		font-family: 'Noto Sans Arabic';
+		position: relative;
+		bottom: 20px;
+		text-shadow: 2.5px 0 aqua,-2.5px 0 red;
+		letter-spacing: 6px;
+		font-weight: 200!important;
+	}
+	#logo *:nth-child(2){
+		font-family: 'Barlow Condensed';
+		text-shadow: 2.5px 0 orangered,-2.5px 0 aqua;
+		color: orange;
+	}
+	#logo *:nth-child(3){
+		font-family: 'Barlow Condensed';
+		text-shadow: 2.5px 0 aqua,-2.5px 0 red;
+	}
+	#logo *:nth-child(4){
+		font-family: 'Barlow Condensed';
+		text-shadow: 2.5px 0 orangered,-2.5px 0 aqua;
+		color: blue;
+	}
+
+	
 
 @media only screen and (max-width: 600px) {
 	h1#logo{
-		font-size: 38.30px!important;
+		font-size: 28px!important;
 	}
+
 	h2#logo{
 		font-size: 90px!important;
 	}
@@ -90,6 +112,37 @@
 		font-family: 'Barlow Condensed';
 		text-shadow: 2.5px 0 orangered,-2.5px 0 aqua;
 		color: blue;
+	}
+
+
+	#header #logo span:nth-child(1){
+		font-family: 'Noto Sans Arabic'!important;
+		position: relative!important;
+		position: relative!important;
+		top: 10px!important;
+		text-shadow: 2.5px 0 aqua,-2.5px 0 red!important;
+		letter-spacing: 4px!important;
+		font-weight: 200!important;
+	}
+	#header #logo span:nth-child(2){
+		font-family: 'Barlow Condensed'!important;
+		text-shadow: 2.5px 0 orangered,-2.5px 0 aqua!important;
+		color: orange!important;
+		position: relative!important;
+		top: 10px!important;
+	}
+	#header #logo span:nth-child(3){
+		font-family: 'Barlow Condensed'!important;
+		text-shadow: 2.5px 0 aqua,-2.5px 0 red!important;
+		position: relative!important;
+		top: 10px!important;
+	}
+	#header #logo span:nth-child(4){
+		font-family: 'Barlow Condensed'!important;
+		text-shadow: 2.5px 0 orangered,-2.5px 0 aqua!important;
+		color: blue!important;
+		position: relative!important;
+		top: 10px!important;
 	}
 
 }
