@@ -1,15 +1,21 @@
 /* Extra small devices (phones, 600px and down) */
+	#header .bars-button-small-d{
+		display: none;
+	}
 @media only screen and (max-width: 600px) {
 	#header{
 		margin-bottom: 100px;
 	}
-	#header .right-section,.left-section{width: 100%!important;clear: right!important;}
-	#header .left-section{height: 120px;clear: right!important;}
+	/*#header .right-section,.left-section{}*/
+	#header .left-section{height: 120px;margin-bottom: 16px;}
+	#header .bars-button-small-d{height: 120px;display: block;float: left;padding: 0;}
+	#header .bars-button-small-d .button{width: 100%;height: 100%;box-shadow: none;text-align: center!important;padding: 0;}
+	
 	/*Nav*/
 	#nav{
 	    width:100%;
 	    height: 353px;
-	    display: block;
+	    display: none;
 	    border: none;
 	    overflow: hidden;
 	    padding-top: 16px;
