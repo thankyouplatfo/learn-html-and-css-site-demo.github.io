@@ -238,6 +238,12 @@ h1,h2,h3,h4,h5,h6{
             background-image: linear-gradient(to right top, #0A5B95, #E8521D)!important;
             color: white!important;
         }
+    .button-hover-color{
+        text-decoration: underline;
+        box-shadow: inset 0px 0px 0px rgba(0, 0, 0, .2), 0px 0px 0px rgba(0, 0, 0, .2);
+        background-image: linear-gradient(to right top, #0A5B95, #E8521D)!important;
+        color: white!important;
+    }
     .close-button{
         position: fixed;
         top: 0;
